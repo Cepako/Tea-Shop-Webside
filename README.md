@@ -1,5 +1,4 @@
-# Tea-Shop
-Tea Shop Webside
+# Tea Shop Webside
 
 My second example website shows a shop with tea and various accessories.
 Unfortunately, it is without a database, so the cart is reset when you go to another subpage. 
