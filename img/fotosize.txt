@@ -1,0 +1,4 @@
+440 440 MainPage tea size
+514 514 normal size
+490 490 popUp foto size
+210 170

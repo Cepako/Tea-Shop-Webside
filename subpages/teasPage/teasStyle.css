@@ -1,0 +1,251 @@
+.baner {
+  height: 65vh;
+}
+.baner::before {
+  background-image: url(../../img/teas/teaBackground.jpg);
+  background-attachment: fixed;
+}
+.baner h1 {
+  top: 60%;
+  font-style: italic;
+}
+.main {
+  display: flex;
+}
+.main .filters {
+  margin: 1%;
+  width: 15%;
+}
+.main .filters h1 {
+  padding-bottom: 4%;
+  margin-bottom: 7%;
+  font-style: italic;
+  font-weight: 300;
+  border-bottom: 1px solid #242a35;
+  max-width: 100%;
+}
+.main .filters .collection,
+.main .filters .priceFilter {
+  height: 4vh;
+  overflow: hidden;
+  transition: 0.5s;
+  border-bottom: 1px solid #242a35;
+}
+.main .filters .priceFilter {
+  margin-top: 10%;
+}
+.main .filters .priceFilter.active {
+  height: 10vh;
+}
+.main .filters .collection.active {
+  height: 16vh;
+}
+.main .filters .collection div,
+.main .filters .priceFilter > div:nth-of-type(1) {
+  position: relative;
+  margin-bottom: 10%;
+  max-width: 100%;
+}
+.main .filters .collection h2,
+.main .filters .priceFilter h2 {
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  font-style: italic;
+}
+.main .filters .collection div ~ h2 {
+  margin-bottom: 2%;
+  font-style: italic;
+}
+.main .filters .collection .all {
+  font-weight: 700;
+}
+.main .filters .collection div span,
+.main .filters .priceFilter div span {
+  font-weight: 300;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* .priceFilter slider*/
+.priceFilter .slider {
+  position: relative;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+.mainPage .main .priceFilter .slider .progress {
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: #555;
+}
+.mainPage .main .priceFilter .range-input {
+  position: relative;
+}
+.mainPage .main .priceFilter .range-input input {
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  height: 2px;
+  width: 100%;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  pointer-events: none;
+}
+.mainPage
+  .main
+  .priceFilter
+  .range-input
+  input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #555;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.priceValue {
+  position: relative;
+  height: 5vh;
+}
+.mainPage .main .priceFilter .priceValue span {
+  color: #555;
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  font-size: 15px;
+  cursor: default;
+}
+.mainPage .main .priceFilter .priceValue span.minValue {
+  right: 82%;
+}
+.mainPage .main .priceFilter .priceValue span.maxValue {
+  right: 0%;
+}
+
+.main .clearFilters {
+  display: none;
+  margin-top: 10%;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.navigation div:nth-of-type(1) a {
+  color: #ffe694;
+}
+
+.main .teaProducts {
+  position: relative;
+  max-width: 85%;
+  min-width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
+.main .teaProducts .isEmpty {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .teaProducts .isEmpty h2 {
+  font-size: 44px;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+}
+
+.main .teaProducts .teaProduct {
+  flex-basis: 32%;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 1%;
+  margin-bottom: 3%;
+}
+.main .teaProducts .teaProduct img {
+  width: 515px;
+  height: 515px;
+}
+.main .teaProducts .teaProduct h2 {
+  padding: 2% 0;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+.main .teaProducts .teaProduct p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* img change */
+
+.main .teaProducts .teaProduct img.herbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.main .teaProducts .teaProduct:hover img.herbs {
+  display: inline;
+}
+
+/* button quickView */
+.main .teaProducts .teaProduct button.view {
+  position: absolute;
+  top: 80.5%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 7%;
+  border: none;
+  transition: 0.4s;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.main .teaProducts .teaProduct:hover button.view {
+  transform: translateY(-110%);
+  cursor: pointer;
+}
+.contactFooterWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  margin-top: 3%;
+}
+.mainPage .contact {
+  padding-top: 4%;
+  margin: 0 auto 2%;
+}
+.teaProduct .openPopUp {
+  width: 95%;
+  height: 8%;
+  border: none;
+  background-color: #242a35;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.teaProduct .openPopUp:hover {
+  background-color: #555;
+}

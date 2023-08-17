@@ -1,0 +1,68 @@
+.teabagProduct div:nth-of-type(1) {
+  display: flex;
+}
+.teabagProduct div .choise {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+}
+.teabagProduct div .choise img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 25%;
+}
+.teabagProduct div .choise img.active {
+  border: 1px solid blue;
+}
+
+.teabagProduct div .color {
+  position: relative;
+  height: 9%;
+  width: 50%;
+  font-weight: 300;
+}
+.teabagProduct div .color div {
+  position: absolute;
+  width: 10%;
+  height: 50%;
+  border-radius: 50%;
+}
+.teabagProduct div .color div:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px black;
+}
+.teabagProduct div .color div.gray {
+  top: 70%;
+  background-color: #555;
+}
+.teabagProduct div .color div.brown {
+  top: 70%;
+  left: 10%;
+  background-color: #4f404c;
+}
+.teabagProduct div .color div.black {
+  top: 70%;
+  background-color: black;
+}
+.teabagProduct div .color div.lightgreen {
+  top: 70%;
+  left: 10%;
+  background-color: lightgreen;
+}
+.teabagProduct div .color div.purple {
+  top: 70%;
+  left: 10%;
+  background-color: purple;
+}
+.teabagProduct div .color div.lightbrown {
+  top: 70%;
+  background-color: #4f404c;
+}
+.teabagProduct div .color div.lightbrown.active,
+.teabagProduct div .color div.gray.active,
+.teabagProduct div .color div.brown.active,
+.teabagProduct div .color div.black.active,
+.teabagProduct div .color div.lightgreen.active,
+.teabagProduct div .color div.purple.active {
+  box-shadow: 0 0 2px 2px black;
+}

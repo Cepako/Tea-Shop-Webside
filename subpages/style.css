@@ -1,0 +1,245 @@
+.baner {
+  height: 65vh;
+}
+.baner::before {
+  background-image: url(../img/teas/teaBackground.jpg);
+  background-attachment: local;
+}
+.baner h1 {
+  top: 60%;
+  font-style: italic;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 7%;
+}
+.main .teabagProduct {
+  display: flex;
+  margin: 5% auto 10%;
+  width: 50%;
+}
+.main .teabagProduct img {
+  width: 500px;
+  height: 440px;
+}
+.main .teabagProduct div:nth-of-type(2) {
+  margin-left: 5%;
+}
+.main .teabagProduct h1 {
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.main .teabagProduct h2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  margin: 3% 0;
+}
+.main .teabagProduct p {
+  font-weight: 300;
+  width: 70%;
+  margin-bottom: 7%;
+}
+.main .teabagProduct label {
+  font-weight: 300;
+}
+.main .teabagProduct input.size {
+  width: 70%;
+  height: 9%;
+  font-size: 18px;
+  padding: 2%;
+  margin: 5% 0 10%;
+}
+.main .teabagProduct input.quantity {
+  width: 25%;
+  height: 9%;
+  font-size: 18px;
+  padding: 2%;
+  margin: 5% 0 10%;
+}
+.main .teabagProduct button {
+  width: 70%;
+  height: 10%;
+  border: 1px solid black;
+  display: block;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.main .teabagProduct button.addToCartWeb {
+  background-color: white;
+  margin-bottom: 3%;
+}
+.main .teabagProduct button.addToCartWeb:hover {
+  color: #aaa;
+}
+.main .teabagProduct button.buyNow {
+  background-color: #242a35;
+  color: white;
+}
+.main .teabagProduct button.buyNow:hover {
+  background-color: #555;
+}
+.main .moreInfo {
+  display: flex;
+  margin: 5% auto;
+  width: 50%;
+  height: 30%;
+}
+.main .moreInfo div {
+  width: 33%;
+  height: 100%;
+}
+.main .moreInfo div:nth-child(2),
+.main .moreInfo div:nth-child(3) {
+  padding-left: 5%;
+}
+.main .moreInfo div:nth-child(1),
+.main .moreInfo div:nth-child(2) {
+  padding-right: 5%;
+  border-right: 1px solid black;
+}
+.main .moreInfo div h2 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+.main .moreInfo div p {
+  font-weight: 300;
+  margin-bottom: 5%;
+  line-height: 25px;
+}
+.main .prevNext {
+  position: absolute;
+  right: 30%;
+  top: -7%;
+  font-size: 20px;
+  cursor: default;
+  font-weight: 300;
+}
+.main a {
+  color: #000;
+  cursor: pointer;
+}
+.main .direction {
+  position: absolute;
+  top: -7%;
+  left: 25%;
+  font-weight: 300;
+}
+.main .direction span {
+  font-weight: 100;
+  cursor: default;
+}
+
+.mainPage .newArrivals {
+  margin: 5% 0 0;
+}
+.newArrivals h2 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+}
+.mainPage .newArrivals .teas {
+  max-width: 50%;
+  margin: 2% auto 0;
+}
+.mainPage .newArrivals .teas div {
+  border: 1px solid black;
+}
+.mainPage .newArrivals .teas div img {
+  width: 210px;
+  height: 170px;
+}
+.mainPage .newArrivals .teas div h2 {
+  font-size: 22px;
+}
+.mainPage .newArrivals .teas div p {
+  font-size: 14px;
+}
+.mainPage .newArrivals .teas div button.view {
+  top: 77.5%;
+  height: 15%;
+}
+.mainPage .newArrivals .teas div:hover button.view {
+  transform: translateY(-110%);
+}
+
+.mainPage .newArrivals .teas .leftArrow {
+  left: -3%;
+}
+
+.contactFooterWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  margin-top: 3%;
+}
+.mainPage .contact {
+  padding-top: 4%;
+  margin: 0 auto 2%;
+}
+.buy {
+  display: none;
+}
+.buy.active {
+  display: block;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 155, 155, 0.6);
+}
+.buy div {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 30%;
+  height: 40%;
+  padding: 2%;
+}
+.buy div span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.buy div h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-weight: 500;
+  font-style: italic;
+}
+.buy div p {
+  margin-top: 5%;
+  text-align: center;
+  font-weight: 300;
+}
+.buy div button.gotIt {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 10%;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  border: none;
+  cursor: pointer;
+}
+.buy div button.gotIt:hover {
+  background-color: #555;
+}
